@@ -43,7 +43,6 @@ mod tests {
         // in particular we loop over the input multiple times
         let filename = "input/day_2.txt";
         let counts = load_and_parse_input(filename, count_duplicates).unwrap();
-        println!("{:#?}", counts);
         let totals = counts
             .iter()
             .fold((0, 0), |(mut next_two, mut next_three), next| {
@@ -61,6 +60,7 @@ mod tests {
         assert_eq!(checksum, 4980);
     }
 
+    #[allow(dead_code)]
     fn test_input() -> Vec<String> {
         let input = vec![
             "abcde", "fghij", "klmno", "pqrst", "fguij", "axcye", "wvxyz",
