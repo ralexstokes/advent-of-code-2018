@@ -1,9 +1,15 @@
+extern crate regex;
+#[allow(unused_imports)]
+#[macro_use]
+extern crate lazy_static;
+
 use std::fs::File;
 use std::io::{self, BufRead, BufReader};
 use std::path::Path;
 
 mod day_1;
 mod day_2;
+mod day_3;
 
 #[allow(dead_code)]
 fn load_and_parse_input<T, P: AsRef<Path>, F: Fn(String) -> T>(
