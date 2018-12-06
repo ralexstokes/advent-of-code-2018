@@ -77,7 +77,7 @@ mod tests {
         fn has_no_conflicts(&self, claim: &Claim) -> bool {
             claim.extent().into_iter().all(|(i, j)| {
                 let claims = &self.inner[i as usize][j as usize];
-                claims.len() == 1 && claims[0] == claim
+                claims.len() == 1
             })
         }
 
