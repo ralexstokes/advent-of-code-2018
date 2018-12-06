@@ -31,10 +31,7 @@ mod tests {
                 break;
             }
         }
-        Duplicates {
-            has_two: has_two,
-            has_three: has_three,
-        }
+        Duplicates { has_two, has_three }
     }
 
     #[test]
