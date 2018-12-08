@@ -8,6 +8,7 @@ use std::path::Path;
 mod day_1;
 mod day_2;
 mod day_3;
+mod day_4;
 
 #[allow(dead_code)]
 fn load_and_parse_input<T, P: AsRef<Path>, F: Fn(String) -> T>(
