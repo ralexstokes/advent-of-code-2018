@@ -3,7 +3,7 @@ mod tests {
 
     use regex::Regex;
 
-    use load_and_parse_input;
+    use crate::load_and_parse_input;
 
     #[derive(Default, Debug, PartialEq)]
     struct Claim {
@@ -60,16 +60,17 @@ mod tests {
 
         fn find_total_conflicts(&self) -> usize {
             self.inner.iter().fold(0, |total, row| {
-                total + row.iter().fold(
-                    0,
-                    |total, col| {
-                        if col.len() > 1 {
-                            total + 1
-                        } else {
-                            total
-                        }
-                    },
-                )
+                total
+                    + row.iter().fold(
+                        0,
+                        |total, col| {
+                            if col.len() > 1 {
+                                total + 1
+                            } else {
+                                total
+                            }
+                        },
+                    )
             })
         }
 

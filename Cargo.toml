@@ -2,6 +2,7 @@
 name = "advent_of_code"
 version = "0.1.0"
 authors = ["Alex Stokes <r.alex.stokes@gmail.com>"]
+edition = "2018"
 
 [dependencies]
 lazy_static = "1.2.0"

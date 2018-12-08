@@ -1,6 +1,6 @@
 #[cfg(test)]
 mod tests {
-    use load_and_parse_input;
+    use crate::load_and_parse_input;
     use std::collections::HashMap;
 
     #[derive(Debug)]

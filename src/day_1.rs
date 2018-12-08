@@ -1,6 +1,6 @@
 #[cfg(test)]
 mod tests {
-    use load_and_parse_input;
+    use crate::load_and_parse_input;
 
     use std::collections::HashSet;
 
@@ -56,7 +56,8 @@ mod tests {
                 *current_frequency += next;
 
                 Some(*current_frequency)
-            }).find(|&f| !seen.insert(f));
+            })
+            .find(|&f| !seen.insert(f));
 
         assert_eq!(result, Some(367));
     }

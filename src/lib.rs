@@ -1,8 +1,6 @@
-extern crate regex;
 #[allow(unused_imports)]
 #[macro_use]
 extern crate lazy_static;
-
 use std::fs::File;
 use std::io::{self, BufRead, BufReader};
 use std::path::Path;
